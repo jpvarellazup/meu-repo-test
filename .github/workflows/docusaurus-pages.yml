@@ -27,8 +27,7 @@ jobs:
           cd docutest
           npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GH_PAT }}
-          publish_dir: ./build
+      - name: Deploy with npm run deploy
+        run: |
+          cd docutest
+          GIT_USER=jpvarellazup GIT_PASS=${{ secrets.GH_PAT }} npm run deploy

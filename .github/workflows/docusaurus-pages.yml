@@ -20,6 +20,7 @@ jobs:
         run: |
           cd docutest
           npm install
+          npm run create-report
 
       - name: Build website
         run: |

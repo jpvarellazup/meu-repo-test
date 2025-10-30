@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Run Backend BFF - app Vivo | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://jpvarellazup.github.io/meu-repo-test/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://jpvarellazup.github.io/meu-repo-test/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://jpvarellazup.github.io/meu-repo-test/docs/tutorial-basics/run-backend-bff"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Run Backend BFF - app Vivo | My Site"><meta data-rh="true" name="description" content="Bem-vindo(a)! Este guia foi elaborado para te ajudar a rodar um projeto backend Node.js nos projetos Vivo, com todos os detalhes necessários para garantir uma experiência tranquila e produtiva. Siga cada etapa com atenção e, ao final, você estará pronto para desenvolver e testar suas aplicações! 😃"><meta data-rh="true" property="og:description" content="Bem-vindo(a)! Este guia foi elaborado para te ajudar a rodar um projeto backend Node.js nos projetos Vivo, com todos os detalhes necessários para garantir uma experiência tranquila e produtiva. Siga cada etapa com atenção e, ao final, você estará pronto para desenvolver e testar suas aplicações! 😃"><link data-rh="true" rel="icon" href="/meu-repo-test/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://jpvarellazup.github.io/meu-repo-test/docs/tutorial-basics/run-backend-bff"><link data-rh="true" rel="alternate" href="https://jpvarellazup.github.io/meu-repo-test/docs/tutorial-basics/run-backend-bff" hreflang="en"><link data-rh="true" rel="alternate" href="https://jpvarellazup.github.io/meu-repo-test/docs/tutorial-basics/run-backend-bff" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tutorial - Basics","item":"https://jpvarellazup.github.io/meu-repo-test/docs/category/tutorial---basics"},{"@type":"ListItem","position":2,"name":"Run Backend BFF - app Vivo","item":"https://jpvarellazup.github.io/meu-repo-test/docs/tutorial-basics/run-backend-bff"}]}</script><link rel="alternate" type="application/rss+xml" href="/meu-repo-test/blog/rss.xml" title="My Site RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/meu-repo-test/blog/atom.xml" title="My Site Atom Feed"><link rel="stylesheet" href="/meu-repo-test/assets/css/styles.9072f9ea.css">
-<script src="/meu-repo-test/assets/js/runtime~main.b77e1a3f.js" defer="defer"></script>
+<script src="/meu-repo-test/assets/js/runtime~main.efd63cdd.js" defer="defer"></script>
 <script src="/meu-repo-test/assets/js/main.599de4e8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -34,12 +34,11 @@
 <ul>
 <li class=""><a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer" class="">Node.js</a> instalado em sua máquina.</li>
 <li class=""><a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="">Git</a> instalado.</li>
-<li class="">Acesso aos repositórios Vivo (solicite ao responsável caso ainda não tenha).</li>
-<li class="">Acesso ao Azure DevOps da Vivo.</li>
+<li class="">Acesso aos Azure DevOps da Vivo (solicite ao responsável caso ainda não tenha).</li>
+<li class="">Baixe a collection para criar a sessão. <a href="/meu-repo-test/assets/files/Session.postman_collection-810f17406f0213f7a0560fd3da59bf68.json" target="_blank" class="">download</a></li>
 </ul>
 <blockquote>
-<p>[!TIP]
-Mantenha sempre seu Node.js atualizado e utilize o NVM para gerenciar múltiplas versões!</p>
+<p>Mantenha sempre seu Node.js atualizado e utilize o NVM para gerenciar múltiplas versões!</p>
 </blockquote>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-configurando-sua-chave-ssh-no-azure-">1. Configurando sua chave SSH no Azure 🔑<a href="#1-configurando-sua-chave-ssh-no-azure-" class="hash-link" aria-label="Direct link to 1. Configurando sua chave SSH no Azure 🔑" title="Direct link to 1. Configurando sua chave SSH no Azure 🔑" translate="no">​</a></h2>
@@ -59,8 +58,7 @@ Mantenha sempre seu Node.js atualizado e utilize o NVM para gerenciar múltiplas
 </ol>
 <p><img decoding="async" loading="lazy" alt="Exemplo de tela do Azure DevOps para adicionar SSH Key" src="/meu-repo-test/assets/images/ssh-azure-fdef8cf6f193b271cdffd928401ad618.png" width="426" height="432" class="img_ev3q"></p>
 <blockquote>
-<p>[!INFO]
-Consulte a <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key" target="_blank" rel="noopener noreferrer" class="">documentação oficial do GitHub</a> para mais detalhes.</p>
+<p>Consulte a <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key" target="_blank" rel="noopener noreferrer" class="">documentação oficial do GitHub</a> para mais detalhes.</p>
 </blockquote>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-clonando-o-repositório-">2. Clonando o repositório 📦<a href="#2-clonando-o-repositório-" class="hash-link" aria-label="Direct link to 2. Clonando o repositório 📦" title="Direct link to 2. Clonando o repositório 📦" translate="no">​</a></h2>
@@ -82,8 +80,7 @@ Consulte a <a href="https://docs.github.com/en/authentication/connecting-to-gith
 <li class=""><strong>Email:</strong> seu e-mail Zup</li>
 </ul>
 <blockquote>
-<p>[!WARNING]
-O login é obrigatório para baixar dependências privadas dos projetos Vivo.</p>
+<p>O login é obrigatório para baixar dependências privadas dos projetos Vivo.</p>
 </blockquote>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-configurando-o-ambiente-do-projeto-️">4. Configurando o ambiente do projeto ⚙️<a href="#4-configurando-o-ambiente-do-projeto-️" class="hash-link" aria-label="Direct link to 4. Configurando o ambiente do projeto ⚙️" title="Direct link to 4. Configurando o ambiente do projeto ⚙️" translate="no">​</a></h2>
@@ -102,8 +99,7 @@ O login é obrigatório para baixar dependências privadas dos projetos Vivo.</p
 <li class="">Preencha as variáveis de ambiente conforme necessário (consulte a documentação interna ou peça ao responsável pelo projeto).</li>
 </ol>
 <blockquote>
-<p>[!TIP]
-Nunca compartilhe seu arquivo <code>.env</code> fora do time! Ele pode conter informações sensíveis.</p>
+<p>Nunca compartilhe seu arquivo <code>.env</code> fora do time! Ele pode conter informações sensíveis.</p>
 </blockquote>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-subindo-o-projeto-">6. Subindo o projeto 🚦<a href="#6-subindo-o-projeto-" class="hash-link" aria-label="Direct link to 6. Subindo o projeto 🚦" title="Direct link to 6. Subindo o projeto 🚦" translate="no">​</a></h2>
@@ -148,8 +144,7 @@ Nunca compartilhe seu arquivo <code>.env</code> fora do time! Ele pode conter in
 </li>
 </ol>
 <blockquote>
-<p>[!INFO]
-Se algum passo falhar, repita o processo ou consulte o responsável técnico do time.</p>
+<p>Se algum passo falhar, repita o processo ou consulte o responsável técnico do time.</p>
 </blockquote>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="referências-e-links-úteis-">Referências e links úteis 🔗<a href="#referências-e-links-úteis-" class="hash-link" aria-label="Direct link to Referências e links úteis 🔗" title="Direct link to Referências e links úteis 🔗" translate="no">​</a></h2>

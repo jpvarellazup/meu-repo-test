@@ -1,4 +1,4 @@
-# Run Backend BFF - app Vivo
+# Run Backend BFF - app VIVO
 
 # 🚀 Guia Definitivo: Rodando um Projeto Backend Node.js nos Projetos Vivo
 
@@ -27,7 +27,6 @@ Antes de começar, certifique-se de que você possui:
 - [Node.js](https://nodejs.org/) instalado em sua máquina.
 - [Git](https://git-scm.com/) instalado.
 - Acesso aos Azure DevOps da Vivo (solicite ao responsável caso ainda não tenha).
-- Baixe a collection para criar a sessão. [download](./collections/Session.postman_collection.json)
 
 > Mantenha sempre seu Node.js atualizado e utilize o NVM para gerenciar múltiplas versões!
 
@@ -55,7 +54,7 @@ cat ~/.ssh/id_rsa.pub | pbcopy
 3. Dê um nome para a chave e cole o conteúdo copiado do seu terminal.
 4. Salve a nova chave.
 
-![Exemplo de tela do Azure DevOps para adicionar SSH Key](./ssh-azure.png)
+![Exemplo de tela do Azure DevOps para adicionar SSH Key](./images/ssh-azure.png)
 
 
 > Consulte a [documentação oficial do GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) para mais detalhes.
@@ -150,17 +149,23 @@ Para executar chamadas autenticadas nas APIs backend, é necessário gerar uma s
 
 Para mais detalhes e download da collection com as APIs para realizar a sessão acesse a [documentação](https://wikicorp.telefonica.com.br/spaces/D4/pages/551196122/02.15+Session+Manager+-+Gerando+Sess%C3%A3o)
 
+
+> Verifique se a coleção de APIs baixada está na configurada.
+
 ### Passos para gerar sessão
 
 1. **Acesse a URL abaixo no navegador:**
+
+   Copie abaixo ou da URL da primeira chamada da collection de Sessão.
 
    ```
    https://auth.br-pre.baikalplatform.com/authorize?response_type=code&scope=openid%20offline_access&client_id=novum-mytelco&redirect_uri=https%3A%2F%2Fmytelco.io%2F4plogin&claims=%7B%22id_token%22%3A%7B%22extra_attrs_authentication%22%3A%7B%22essential%22%3Atrue%7D%2C%22phone_number%22%3A%7B%22essential%22%3Atrue%7D%2C%22email%22%3A%7B%22essential%22%3Atrue%7D%7D%7D&state=6TEIlXDAUxgRCXTwqqErHI0KUbIJU1oFuIvfHMnjixzTAVOoM95uXsM3MzYNSpPC&purpose=identify-customer%20customer-self-service&device_id=dc5756300ccf4f45b9be9cbdabed8bae&external_idp=OAM12PREPROD
    ```
 
 2. **Realize o login via número Vivo (OTP) ou por CPF:**
-   - Massa de teste: senha `135791`
+   Massa de teste exemplo: 
    - CPF: `54963548038`
+   - Senha `135791`
 
 3. **Copie o parâmetro `code` da URL após o login**
    - Mesmo que a página apresente erro, o código estará na URL.
@@ -171,10 +176,10 @@ Para mais detalhes e download da collection com as APIs para realizar a sessão 
 5. **Recupere a `sessão` gerada no ultimo passo das chamadas**
    - Use a sessão nos headers da sua chamada como valor do campo x-session.
 
-   [x-session](./x-session.png)
+   [x-session](./images/x-session.png)
 
 
-> Se algum passo falhar, repita o processo ou consulte o responsável técnico do time.
+> Se algum passo falhar, repita o processo do inicio ou consulte o responsável técnico do time.
 
 ---
 

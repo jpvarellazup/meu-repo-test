@@ -27,6 +27,7 @@ Antes de começar, certifique-se de que você possui:
 - [Node.js](https://nodejs.org/) instalado em sua máquina.
 - [Git](https://git-scm.com/) instalado.
 - Acesso aos Azure DevOps da Vivo (solicite ao responsável caso ainda não tenha).
+- Faça o download e importe a collection de sessão [Download](/collections/session.postman_collection.json.zip)
 
 > Mantenha sempre seu Node.js atualizado e utilize o NVM para gerenciar múltiplas versões!
 
@@ -148,6 +149,8 @@ Verifique se não há erros no terminal e aguarde até que a aplicação esteja 
 Para executar chamadas autenticadas nas APIs backend, é necessário gerar uma sessão válida.
 
 Para mais detalhes e download da collection com as APIs para realizar a sessão acesse a [documentação](https://wikicorp.telefonica.com.br/spaces/D4/pages/551196122/02.15+Session+Manager+-+Gerando+Sess%C3%A3o)
+
+Faça o download da collection mais atualizada [aqui](/collections/session.postman_collection.json.zip), pois a versão disponível na Wiki pode estar desatualizada.
 
 
 > Verifique se a coleção de APIs baixada está na configurada.

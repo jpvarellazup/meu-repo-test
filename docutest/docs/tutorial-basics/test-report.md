@@ -8,27 +8,19 @@ sidebar_position: 7
 
 ---
 
-## Cenário: test
+## Cenário: has title
 
 | Projeto | Status |
 |---------|--------|
-| chromium | :red_circle: Erro |
+| chromium | 🟢 |
 
 ---
 
-## Cenário: test
+## Cenário: get started link
 
 | Projeto | Status |
 |---------|--------|
-| firefox | :red_circle: Erro |
-
----
-
-## Cenário: test
-
-| Projeto | Status |
-|---------|--------|
-| webkit | :red_circle: Erro |
+| chromium | 🟢 |
 
 ---
 

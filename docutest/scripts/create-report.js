@@ -6,10 +6,10 @@ const json = require('../test-results.json');
 
 // Função para mapear status para emoji/resultado
 function statusToMd(status) {
-  if (status === 'passed') return ':green_circle: Sucesso';
-  if (status === 'failed' || status === 'timedOut') return ':red_circle: Erro';
-  if (status === 'skipped') return ':grey_question: Ignorado';
-  return ':grey_question: Desconhecido';
+  if (status === 'passed') return '🟢';
+  if (status === 'failed' || status === 'timedOut') return '🔴';
+  if (status === 'skipped') return '🟡';
+  return '🔵';
 }
 
 // Extrai a data de execução do campo stats.startTime

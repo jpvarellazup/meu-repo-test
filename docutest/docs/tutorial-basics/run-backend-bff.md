@@ -26,10 +26,9 @@ Antes de começar, certifique-se de que você possui:
 
 - [Node.js](https://nodejs.org/) instalado em sua máquina.
 - [Git](https://git-scm.com/) instalado.
-- Acesso aos repositórios Vivo (solicite ao responsável caso ainda não tenha).
-- Acesso ao Azure DevOps da Vivo.
+- Acesso aos Azure DevOps da Vivo (solicite ao responsável caso ainda não tenha).
+- Baixe a collection para criar a sessão. [download](./collections/Session.postman_collection.json)
 
-> [!TIP]
 > Mantenha sempre seu Node.js atualizado e utilize o NVM para gerenciar múltiplas versões!
 
 ---
@@ -58,7 +57,7 @@ cat ~/.ssh/id_rsa.pub | pbcopy
 
 ![Exemplo de tela do Azure DevOps para adicionar SSH Key](./ssh-azure.png)
 
-> [!INFO]
+
 > Consulte a [documentação oficial do GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) para mais detalhes.
 
 ---
@@ -94,7 +93,7 @@ Preencha os campos solicitados:
 - **Password:** senha da matrícula Vivo
 - **Email:** seu e-mail Zup
 
-> [!WARNING]
+
 > O login é obrigatório para baixar dependências privadas dos projetos Vivo.
 
 ---
@@ -128,7 +127,7 @@ npm install
 2. Faça uma cópia dele e renomeie para `.env`.
 3. Preencha as variáveis de ambiente conforme necessário (consulte a documentação interna ou peça ao responsável pelo projeto).
 
-> [!TIP]
+
 > Nunca compartilhe seu arquivo `.env` fora do time! Ele pode conter informações sensíveis.
 
 ---
@@ -174,7 +173,7 @@ Para mais detalhes e download da collection com as APIs para realizar a sessão 
 
    [x-session](./x-session.png)
 
-> [!INFO]
+
 > Se algum passo falhar, repita o processo ou consulte o responsável técnico do time.
 
 ---
